@@ -17,4 +17,33 @@ while($suma<1000)
 
 echo "<br>Sume ".$cont." numeros";
 
+//ej3
+echo "<br><br>--------------Ejercicio3--------------<br><br>";
+
+
+$a=7;
+$b=10;
+$c=9;
+echo "numeros: ".$a."/".$b."/".$c."<br>"
+if($a>$b && $a<$c || $a>$c && $a<$b)
+{
+	echo "el numero del medio es ".$a;
+}
+elseif($a>$b && $c<$b || $b<$c && $a<$b)
+{
+	echo "el numero del medio es ".$b;
+
+}
+elseif ($c>$b && $c<$a || $c<$b && $a<$c) 
+{
+	
+	echo "el numero del medio es ".$c;
+}
+else
+{
+	echo "no hay numero medio";
+}
+
+
+
 ?>
