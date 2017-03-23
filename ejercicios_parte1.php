@@ -21,10 +21,10 @@ echo "<br>Sume ".$cont." numeros";
 echo "<br><br>--------------Ejercicio3--------------<br><br>";
 
 
-$a=7;
-$b=10;
-$c=9;
-echo "numeros: ".$a."/".$b."/".$c."<br>"
+$a=rand(1,20);
+$b=rand(1,20);
+$c=rand(1,20);
+echo "numeros: ".$a."/".$b."/".$c."<br>";
 if($a>$b && $a<$c || $a>$c && $a<$b)
 {
 	echo "el numero del medio es ".$a;
