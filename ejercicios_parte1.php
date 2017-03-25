@@ -1,4 +1,5 @@
 <?php
+
 //ej1
 echo "--------------Ejercicio 1--------------<br><br>";
 $suma=0;
@@ -96,6 +97,44 @@ else
 	echo "no hay numero medio";
 }
 
+//ej4
+echo "<br><br>--------------Ejercicio 4--------------<br><br>";
 
+$operador;
+$num=rand(1,4);
+$num1=rand();
+$num2=rand();
+$resul;
 
+switch ($num) {
+	case '1':
+		$operador='+';
+		break;
+	case '2':
+		$operador='-';
+		break;
+	case '3':
+		$operador='/';
+		break;
+	default:
+		$operador='*';
+		break;
+}
+
+switch ($operador) {
+	case '+':
+		$resul= $num1+$num2;
+		break;
+	case '-':
+		$resul= $num1-$num2;
+		break;
+	case '/':
+		$resul= $num1/$num2;
+		break;
+	default:
+		$resul= $num1*$num2;
+		break;
+}
+$resul=number_format($resul,2,',', ' ');
+echo $num1.$operador.$num2."=".$resul;
 ?>
