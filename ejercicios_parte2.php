@@ -1,4 +1,5 @@
 <?php
+
 //ejercicio 6
 //constructor
 
@@ -90,6 +91,25 @@ foreach ($numeros as $i)
 {
     echo "<br>".$numeros[$cont];
     $cont++;
+}
+
+
+
+//ej8
+echo "<br><br>--------------Ejercicio 8--------------<br><br>";
+
+
+$v=array(
+    1 => 90,
+    30 => 7,
+    'e'=> 99,
+    'hola' => 'mundo'
+
+
+);
+
+foreach ($v as $key => $value) {
+   echo "<br>".$value;
 }
 
 
