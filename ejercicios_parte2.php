@@ -51,4 +51,46 @@ for($i=0; $i<5; $i++)
 }
 var_dump($tercerArray);
 
+
+//ej7
+echo "<br>--------------Ejercicio 7--------------<br><br>";
+
+$numeros= array();
+$cont=0;
+$i=1;
+
+while($cont<10)
+{
+    if($i%2 != 0)
+    {
+        $numeros[$cont] = $i;
+        $cont++;
+    }
+    $i++;
+}
+//imprimo con for
+echo "Imprimo con for<br>";
+for($i = 0; $i<10;$i++)
+{
+    echo "<br>".$numeros[$i];
+}
+
+echo "<br><br>Imprimo con while<br>";
+$cont=0;
+while($cont<10)
+{
+    echo "<br>".$numeros[$cont];
+    $cont++;
+}
+
+echo "<br><br>Imprimo con foreach<br>";
+
+$cont=0;
+foreach ($numeros as $i) 
+{
+    echo "<br>".$numeros[$cont];
+    $cont++;
+}
+
+
 ?>
