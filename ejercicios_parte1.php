@@ -137,4 +137,82 @@ switch ($operador) {
 }
 $resul=number_format($resul,2,',', ' ');
 echo $num1.$operador.$num2."=".$resul;
+
+
+
+//ej5
+echo "<br><br>--------------Ejercicio 5--------------<br><br>";
+
+$num=(string)rand(20,60);
+$enLetras;
+//decena
+switch ($num[0]) {
+	case '2':
+		if($num[1]==0)
+			$enLetras="veinte";
+		else
+			$enLetras="veinti";
+		break;
+	case'3':
+		if($num[1]==0)
+			$enLetras="treinta";
+		else
+			$enLetras="treinta y ";
+		break;
+	case'4':
+		if($num[1]==0)
+			$enLetras="cuarenta";
+		else
+			$enLetras="cuarenta y ";
+		break;
+	case'5':
+		if($num[1]==0)
+			$enLetras="cincuenta";
+		else
+			$enLetras="cincuenta y ";
+		break;
+	default:
+		if($num[1]==0)
+			$enLetras="sesenta";
+		else
+			$enLetras="sesenta y ";
+		break;
+}
+
+//unidades
+switch ($num[1]) {
+	case '1':
+		$enLetras= $enLetras."uno";
+		break;
+	case '2':
+		$enLetras= $enLetras."dos";
+		break;
+	case '3':
+		$enLetras= $enLetras."tres";
+		break;
+	case '4':
+		$enLetras= $enLetras."cuatro";
+		break;
+	case '5':
+		$enLetras= $enLetras."cinco";
+		break;
+	case '6':
+		$enLetras= $enLetras."seis";
+		break;
+	case '7':
+		$enLetras= $enLetras."siete";
+		break;
+	case '8':
+		$enLetras= $enLetras."ocho";
+		break;
+	case '9':
+		$enLetras= $enLetras."nueve";
+		break;
+	default:
+		break;
+}
+
+echo $num."<br>".$enLetras;
+
+
 ?>
