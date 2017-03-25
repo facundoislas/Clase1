@@ -4,13 +4,13 @@
 //constructor
 
 echo "--------------Ejercicio 6--------------<br><br>";
-echo "---------Con constructor------------<br><br>";
+echo "Con constructor<br><br>";
 $miArray = array(rand(1,20), rand(1,20),rand(1,20),rand(1,20),rand(1,20));
 
 var_dump($miArray);
 
 //con llaves
-echo "<br><br>---------Con llaves y for, y el promedio------------<br><br>";
+echo "<br><br>Con llaves y for, y el promedio<br><br>";
 $otroArray = array();
 $suma;
 $prom;
@@ -42,7 +42,7 @@ echo "<br>";
 echo "El promedio es ".$prom."<br>";
 
 //push
-echo "<br><br>---------Con push------------<br><br>";
+echo "<br><br>Con push<br><br>";
 $tercerArray = array();
 $i;
 for($i=0; $i<5; $i++)
@@ -112,5 +112,47 @@ foreach ($v as $key => $value) {
    echo "<br>".$value;
 }
 
+//ej9
+echo "<br><br>--------------Ejercicio 9--------------<br><br>";
 
+$lapicera= array(
+
+    'color' =>'',
+    'marca' =>'',
+    'trazo' =>'',
+    'precio' =>''
+
+);
+
+$lapicera['color'] = 'rojo';
+$lapicera['marca'] = 'bic';
+$lapicera['trazo'] = 'fino';
+$lapicera['precio'] = '10.00';
+
+
+echo "<br><br><strong>Primera Lapicera: </strong>";
+foreach ($lapicera as $key => $value) {
+    echo "<br>".$key.": ".$value;
+}
+
+$lapicera['color'] = 'azul';
+$lapicera['marca'] = 'mundial';
+$lapicera['trazo'] = 'grueso';
+$lapicera['precio'] = '20.00';
+
+echo "<br><br><strong>Segunda Lapicera: </strong>";
+foreach ($lapicera as $key => $value) {
+    echo "<br>".$key.": ".$value;
+}
+
+
+$lapicera['color'] = 'violeta';
+$lapicera['marca'] = 'stick';
+$lapicera['trazo'] = 'mediano';
+$lapicera['precio'] = '15.50';
+
+echo "<br><br><strong>Tercera Lapicera: </strong>";
+foreach ($lapicera as $key => $value) {
+    echo "<br>".$key.": ".$value;
+}
 ?>
