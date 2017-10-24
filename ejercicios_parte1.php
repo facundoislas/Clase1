@@ -15,6 +15,8 @@ while($suma<1000)
 	}
 }
 
+
+
 echo "<br>Sume ".$cont." numeros";
 
 //ej2
